@@ -3,5 +3,6 @@
 ################################################################################
 
 /.vs
+/SeletorFamilias.WepApp/SeletorFamilias.WepApp/obj
 /SeletorFamilias.WepApp/SeletorFamilias.WepApp/obj/Debug/net5.0
 /SeletorFamilias.WepApp/SeletorFamilias.WepApp/obj/Release/net5.0
