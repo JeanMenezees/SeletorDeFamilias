@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/SeletorFamilias.WepApp/SeletorFamilias.WepApp/obj/Debug/net5.0
+/SeletorFamilias.WepApp/SeletorFamilias.WepApp/obj/Release/net5.0
