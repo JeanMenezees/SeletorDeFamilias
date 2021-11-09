@@ -8,8 +8,8 @@ namespace SeletorFamilias.WepApp.Models
         public ResponsavelFamiliar Responsavel { get; set; }
         public ConjugeFamiliar Conjuge { get; set; }
         public List<DependenteFamiliar> Dependentes { get; set; }
-        public int Pontuacao { get; set; }
-        public decimal RendaTotal { get; set; }
+        public int Pontuacao { get; private set; }
+        private decimal RendaTotal;
 
         public Familia(ResponsavelFamiliar responsavel, ConjugeFamiliar conjuge, List<DependenteFamiliar> dependentes)
         {
@@ -19,6 +19,13 @@ namespace SeletorFamilias.WepApp.Models
             Dependentes = dependentes;
             Pontuacao = 0;
             RendaTotal = DefinirRendaTotal(responsavel.Renda, conjuge.Renda);
+        }
+
+        public decimal ObterRendaTotal() => RendaTotal;
+
+        public void AcrescentarPontuacao(int pontuacao)
+        {
+            Pontuacao += pontuacao;
         }
 
         private decimal DefinirRendaTotal(decimal rendaResponsavel, decimal rendaConjuge)
