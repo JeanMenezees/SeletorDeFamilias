@@ -41,7 +41,7 @@ namespace SeletorDeFamilias.Testes
 
             var familia = new Familia(responsavel, conjuge, dependentes);
 
-            Assert.Equal(rendaEsperada, familia.RendaTotal);
+            Assert.Equal(rendaEsperada, familia.ObterRendaTotal());
         }
     }
 }

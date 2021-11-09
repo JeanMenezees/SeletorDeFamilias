@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SeletorDeFamilias.Servicos\SeletorDeFamilias.Servicos.csproj" />
     <ProjectReference Include="..\SeletorFamilias.WepApp\SeletorFamilias.WepApp.csproj" />
   </ItemGroup>
 

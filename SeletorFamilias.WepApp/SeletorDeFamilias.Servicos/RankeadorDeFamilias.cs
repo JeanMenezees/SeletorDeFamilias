@@ -2,7 +2,7 @@
 
 namespace SeletorDeFamilias.Servicos
 {
-    public class Class1
+    public class RankeadorDeFamilias
     {
     }
 }
