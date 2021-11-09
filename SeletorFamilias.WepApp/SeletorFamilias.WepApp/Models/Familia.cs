@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SeletorFamilias.WepApp.Models
 {
@@ -11,6 +9,7 @@ namespace SeletorFamilias.WepApp.Models
         public ConjugeFamiliar Conjuge { get; set; }
         public List<DependenteFamiliar> Dependentes { get; set; }
         public int Pontuacao { get; set; }
+        public decimal RendaTotal { get; set; }
 
         public Familia(ResponsavelFamiliar responsavel, ConjugeFamiliar conjuge, List<DependenteFamiliar> dependentes)
         {
@@ -19,6 +18,17 @@ namespace SeletorFamilias.WepApp.Models
             Conjuge = conjuge;
             Dependentes = dependentes;
             Pontuacao = 0;
+            RendaTotal = DefinirRendaTotal(responsavel.Renda, conjuge.Renda);
+        }
+
+        private decimal DefinirRendaTotal(decimal rendaResponsavel, decimal rendaConjuge)
+        {
+            if(rendaResponsavel + rendaConjuge < 0)
+            {
+                throw new Exception("A familia deve ter uma renda total maior ou igual a zero.");
+            }
+
+            return rendaResponsavel + rendaConjuge;
         }
         
         private void ValidarDados(ResponsavelFamiliar responsavel, ConjugeFamiliar conjuge)
