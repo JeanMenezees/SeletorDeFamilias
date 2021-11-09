@@ -10,12 +10,15 @@ namespace SeletorFamilias.WepApp.Models
         public ResponsavelFamiliar Responsavel { get; set; }
         public ConjugeFamiliar Conjuge { get; set; }
         public List<DependenteFamiliar> Dependentes { get; set; }
+        public int Pontuacao { get; set; }
+
         public Familia(ResponsavelFamiliar responsavel, ConjugeFamiliar conjuge, List<DependenteFamiliar> dependentes)
         {
             ValidarDados(responsavel, conjuge);
             Responsavel = responsavel;
             Conjuge = conjuge;
             Dependentes = dependentes;
+            Pontuacao = 0;
         }
         
         private void ValidarDados(ResponsavelFamiliar responsavel, ConjugeFamiliar conjuge)
