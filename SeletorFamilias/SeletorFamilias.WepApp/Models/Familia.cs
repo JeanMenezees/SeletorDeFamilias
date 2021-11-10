@@ -25,6 +25,10 @@ namespace SeletorFamilias.WepApp.Models
 
         public void AcrescentarPontuacao(int pontuacao)
         {
+            if(pontuacao < 0)
+            {
+                throw new ArgumentException("A familia nao pode acrescentar uma pontuacao negativa.");
+            }
             Pontuacao += pontuacao;
         }
 
