@@ -1,8 +1,33 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="cabecalho container">
+    <h1 class="cabecalho__titulo">Seletor de Famílias</h1>
+    <p class="cabecalho__frase">Aqui as famílias são contempladas às casas pelo governo de maneira <span>justa</span></p>
+    <div class="cabecalho__opcoes">
+        <a href="cadastrar.html" class="cabecalho__opcoes--cadastrar">Cadastrar família</a>
+        <a href="ranking.html" class="cabecalho__opcoes--ranking">Ranking</a>
+    </div>
+</section>
+<section class="criterios container">
+    <h1 class="criterios__titulo">Criterios avaliados</h1>
+    <div class="criterio">
+        <img src="~/Icones/Dependentes.svg" alt="Icone de dependetes" class="criterio__icone">
+        <h1 class="criterio__titulo">Dependentes</h1>
+        <p class="criterio__descricao">A quantidade de dependentes (maiores de 18 anos) de uma família influencia no seu ranking</p>
+    </div>
+    <div class="criterio">
+        <img src="~/Icones/Renda.svg" alt="Icone de renda" class="criterio__icone">
+        <h1 class="criterio__titulo">Renda</h1>
+        <p class="criterio__descricao">A quantidade de renda total de uma família influencia no seu ranking</p>
+    </div>
+</section>
+<section class="desenvolvimento container">
+    <h1 class="desenvolvimento__titulo">Desenvolvimento</h1>
+    <div class="desenvolvedor">
+        <img src="#" alt="Foto do desenvolvedor" class="desenvolvimento__foto">
+        <h1 class="desenvolvedor__nome">Jean</h1>
+        <p class="desenvolvedor__idade">20 Anos</p>
+    </div>
+</section>

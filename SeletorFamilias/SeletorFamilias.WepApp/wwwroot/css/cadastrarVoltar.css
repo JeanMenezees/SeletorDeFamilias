@@ -1,0 +1,47 @@
+.cadastrar__voltar{
+    display: flex;
+    flex-direction: row;
+
+    padding: 2%;
+}
+
+.voltar__inicio{
+    transform: scale(1.5);
+
+    margin-right: 16px;
+}
+
+.cadastrar__titulo{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.cadastrar__ancora{
+    display: inline-flex;
+}
+
+.cadastrar__titulo{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.cadastrar__familia--botao{
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 8px;
+
+    background-color: transparent;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+    width: 90%;
+
+    margin: 8px auto;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

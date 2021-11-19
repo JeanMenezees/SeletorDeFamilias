@@ -1,0 +1,38 @@
+.ranking__familias{
+    text-align: center;
+}
+
+.ranking__familia{
+    background-color: var(--cor-cinza);
+
+    margin: 8px auto;
+}
+
+.primeira__familia{
+    padding: 16px;
+
+    width: 90%;
+}
+
+.segunda__familia{
+    padding: 8px;
+
+    width: 85%;
+}
+
+.terceira__familia{
+    padding: 4px;
+
+    width: 80%;
+}
+
+.familia__contemplar{
+    padding: 8px;
+
+    border-radius: 15px;
+    border: 0;
+
+    font-weight: bold;
+
+    background-color: var(--cor-laranja);
+}

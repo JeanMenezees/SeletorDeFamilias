@@ -1,0 +1,15 @@
+.cadastrar__responsavel--titulo{
+    font-size: 1.7rem;
+}
+
+.cadastrar__responsavel--input{
+    background-color: var(--cor-cinza);
+
+    border: 0;
+    border-radius: 15px;
+
+    padding: 8px;
+
+    width: 90%;
+    margin: 8px 0;
+}

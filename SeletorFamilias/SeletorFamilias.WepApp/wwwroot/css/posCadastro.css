@@ -1,0 +1,61 @@
+.poscadastro{
+    background-color: black;
+    color: white;
+
+    margin: 8px;
+
+    border-radius: 15px;
+
+}
+
+.pontuacao{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.detalhes__familia{
+    background-color: var(--cor-laranja);
+    color: black;
+
+    border-radius: 15px;
+
+    padding: 8px;
+}
+
+.familia__responsavel{
+    font-size: 1.7rem;
+}
+
+.familia__renda{
+    font-size: 1.2rem;
+}
+
+.adicionar__dependente--descricao{
+    font-size: 1rem;
+}
+
+.adicionar__dependente--ancora{
+    background-color: var(--cor-cinza);
+    
+    padding: 2% 48%;
+
+    border-radius: 15px;
+}
+
+.confirmar__familia{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    width: 90%;
+
+    margin: 8px auto;
+
+    background-color: transparent;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 8px;
+}

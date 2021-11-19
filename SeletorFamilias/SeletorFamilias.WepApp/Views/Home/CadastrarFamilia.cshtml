@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar Família";
+}
+
+<section class="cadastrar__voltar">
+    <a href="home.html" class="cadastrar__ancora">
+        <img src="~/Icones/Voltar-Preto.svg" alt="" class="voltar__inicio">
+    </a>
+    <h1 class="cadastrar__titulo">Cadastro</h1>
+</section>
+<section class="cadastrar__responsavel container">
+    <h1 class="cadastrar__responsavel--titulo">Reponsável</h1>
+    <input type="text" class="cadastrar__responsavel--input nomeResponsavel" placeholder="Nome">
+    <input type="text" class="cadastrar__responsavel--input cpfResponsavel" placeholder="CPF">
+    <input type="text" class="cadastrar__responsavel--input nascimentoResponsavel" placeholder="Data de nascimento">
+</section>
+<section class="cadastrar__conjuge container">
+    <h1 class="cadastrar__conjuge--titulo">Cônjuge</h1>
+    <input type="text" class="cadastrar__conjuge--input nomeConjuge" placeholder="Nome">
+    <input type="text" class="cadastrar__conjuge--input cpfConjuge" placeholder="CPF">
+    <input type="text" class="cadastrar__conjuge--input nascimentoConjuge" placeholder="Data de nascimento">
+</section>
+<button class="cadastrar__familia--botao" onclick="CadastrarFamilia(this)">Cadastrar Família</button>

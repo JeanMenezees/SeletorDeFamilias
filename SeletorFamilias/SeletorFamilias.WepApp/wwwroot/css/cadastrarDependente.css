@@ -1,0 +1,32 @@
+.cadastrar__dependente--input{
+    background-color: var(--cor-cinza);
+
+    border: 0;
+    border-radius: 15px;
+
+    padding: 8px;
+
+    width: 90%;
+    margin: 8px 0;
+}
+
+.cadastrar__dependente--botao{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    width: 90%;
+
+    margin: 8px auto;
+
+    background-color: transparent;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 8px;
+
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
