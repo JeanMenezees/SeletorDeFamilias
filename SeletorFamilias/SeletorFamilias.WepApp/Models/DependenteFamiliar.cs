@@ -7,9 +7,16 @@ namespace SeletorFamilias.WepApp.Models
 {
     public class DependenteFamiliar
     {
+        public int Id { get; private set; }
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public DateTime DataDeNascimento { get; set; }
+
+        private DependenteFamiliar()
+        {
+
+        }
+
         public DependenteFamiliar(string nome, string cpf, DateTime dataDeNascimento)
         {
             Nome = nome;

@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SeletorFamilias.WepApp.DAO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,10 +25,16 @@ namespace SeletorFamilias.WepApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<Contexto>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("Default")));
+
+            services.AddTransient<IFamiliaDAO, FamiliaDAO>();
+            services.AddTransient<IMigradorDoBanco, MigradorDoBanco>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -45,6 +52,8 @@ namespace SeletorFamilias.WepApp
             app.UseRouting();
 
             app.UseAuthorization();
+
+            serviceProvider.GetService<IMigradorDoBanco>().Migrar();
 
             app.UseEndpoints(endpoints =>
             {
