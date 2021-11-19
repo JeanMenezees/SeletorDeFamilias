@@ -1,0 +1,20 @@
+.botao__ranking{
+    text-align: center;
+}
+
+.botao__ranking--cadastrar{
+    color: black;
+
+    width: 90%;
+
+    font-weight: bold;
+
+    padding: 16px;
+
+    border-radius: 15px;
+    border: 2px solid var(--cor-preta);
+}
+
+.ranking__ancora{
+    display: inline-flex;
+}

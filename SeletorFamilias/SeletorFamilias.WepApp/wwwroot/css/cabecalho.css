@@ -1,0 +1,58 @@
+.cabecalho{
+    background-color: var(--cor-preta);
+    color: white;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+.cabecalho__titulo{
+    font-size: 2.8rem;
+
+    margin: 8px 0;
+}
+
+.cabecalho__frase{
+    font-size: 1.7rem;
+}
+
+.cabecalho__opcoes{
+    width: 90%;
+
+    margin: 48px auto;
+
+    text-align: center;
+}
+
+.cabecalho__opcoes--cadastrar{
+    background-color: transparent;
+    color: white;
+
+    border-radius: 15px;
+    border: 2px solid var(--cor-laranja);
+
+    padding: 16px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+.cabecalho__opcoes--ranking{
+    background-color: var(--cor-cinza);
+    color: black;
+
+    border-radius: 15px;
+    border: 0;
+
+    padding: 16px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+span{
+    color: var(--cor-laranja);
+}

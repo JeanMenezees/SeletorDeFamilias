@@ -1,0 +1,28 @@
+.criterios__titulo{
+    font-size: 1.7rem;
+}
+
+.criterio{
+    text-align: center;
+
+    margin: 16px 0;
+
+    padding: 32px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.criterio__icone{
+    transform: scale(2);
+}
+
+.criterio__titulo{
+    font-size: 1.4rem;
+}
+
+.criterio__descricao{
+    color: var(--cor-textoapagado);
+
+    font-size: 1rem;
+}

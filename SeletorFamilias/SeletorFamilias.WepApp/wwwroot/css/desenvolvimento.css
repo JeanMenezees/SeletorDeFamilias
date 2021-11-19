@@ -1,0 +1,19 @@
+.desenvolvimento__titulo{
+    font-size: 1.7rem;
+}
+
+.desenvolvedor{
+    text-align: center;
+
+    margin: 16px 0;
+}
+
+.desenvolvedor__nome{
+    font-size: 1.4rem;
+}
+
+.desenvolvedor__idade{
+    font-size: 0.9rem;
+
+    color: var(--cor-textoapagado);
+}

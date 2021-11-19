@@ -1,0 +1,17 @@
+.ranking__voltar{
+    display: flex;
+    flex-direction: row;
+
+    padding: 2%;
+}
+
+.voltar__inicio{
+    transform: scale(1.5);
+
+    margin-right: 16px;
+}
+
+.ranking__titulo{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
