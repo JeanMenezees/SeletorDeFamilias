@@ -7,9 +7,15 @@ namespace SeletorFamilias.WepApp.Models
 {
     public class ConjugeFamiliar
     {
+        public int Id { get; private set; }
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public decimal Renda { get; set; }
+
+        private ConjugeFamiliar()
+        {
+
+        }
 
         public ConjugeFamiliar(string nome, string cpf, decimal renda)
         {

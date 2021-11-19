@@ -5,11 +5,17 @@ namespace SeletorFamilias.WepApp.Models
 {
     public class Familia
     {
+        public int Id { get; private set; }
         public ResponsavelFamiliar Responsavel { get; set; }
         public ConjugeFamiliar Conjuge { get; set; }
         public List<DependenteFamiliar> Dependentes { get; set; }
         public int Pontuacao { get; private set; }
         private decimal _rendaTotal;
+
+        private Familia()
+        {
+
+        }
 
         public Familia(ResponsavelFamiliar responsavel, ConjugeFamiliar conjuge, List<DependenteFamiliar> dependentes)
         {
